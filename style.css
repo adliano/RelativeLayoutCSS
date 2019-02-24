@@ -1,0 +1,79 @@
+/*
+    AdrianoAlves
+    Feb 23 2019
+    Practice using Relative Position
+*/
+body{
+  margin: 0;
+  padding: 0;
+}
+
+/* this is the box with all boxes inside */
+.boxSet{
+  background: red;
+  height: 400px;
+  width: 960px;
+  margin: auto;
+}
+/* creatinh the box 80px X 80px with blue color */
+.box{
+  background: blue;
+  margin: 0;
+  height: 80px;
+  width: 80px;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.box_1{
+  top: 0; /* 0 from it original possition */
+  left: 0; /* 0 from it original possition */
+}
+
+.box_2{
+  /* top:0; from it original possition,
+  remember that original position whould be bellow box_1 so it will keep
+  under box_1 */
+  top: 0;
+  /* left: 80px; moved 80px to the right because it original position shoud be below box_1
+  and left align with it, so moving 80px witch it's the width of the box */
+  left: 80px;
+
+}
+
+.box_3{
+  /* top: 0;  to keep it under box_2 */
+  top: 0;
+  /* left: 160px; original position it's 0 because its align under box_2,
+  box_1 have 80px plus 80px of box_2 i moved 160px */
+  left: 160px;
+}
+
+.box_4{
+  /* i want this box to be under box_2 but its original position its under box_3,
+  box_3 have height:80px;so moving it up 80px (-80px) it will place it righ under box_2 */
+  top: -80px;
+  /* remember all the original position its 0 from the left */
+  right: 0;
+}
+
+.box_5{
+  top: -240px;
+  left: 240px;
+}
+
+.box_6{
+  top: -400px;
+  left: 160px;
+}
+
+.box_7{
+  top: -480px;
+  left: 320px;
+}
+
+.box_8{
+  top: -400px;
+  left: 320px;
+}
